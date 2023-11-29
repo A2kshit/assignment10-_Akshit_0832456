@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fictional strore</title>
+
+     <!--bootstrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="mt-4 p-3 text-center bg-secondary">
+            <h1>Akshit Akshit</h1>
+        </header>
+
+        <div class="row">
+            <div class="col-md-4 mt-4">
+                <img src="SmartWatch.jpg" alt="Electronic Product" class="img-fluid">
+                <p class="mt-2 text-center">
+                    Are you looking for a smart watch? Best Buy has a great selection that includes smartwatches with heart rate monitoring, androids & more from top brands.</p>
+            </div>
+            <div class="col-md-4 mt-4">
+                <table class="table table-hover table-info">
+                    <thead>
+                    <tr>
+                        <th class="bg-success">Product Name</th>
+                        <th class="bg-success">Price</th>
+                        <th class="bg-success">Quantity</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Apple Watch Series 9</td>
+                        <td>$1300</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Garmin Venu 3</td>
+                        <td>$1500</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>LIGE Military Smart Watch</td>
+                        <td>$1600</td>
+                        <td>3</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-4 order-sm-first">
+                <form class="mt-4 p-3 bg-success">
+                    <div class="form">
+                        <label for="productName">Product Name</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Open this select watch</option>
+                            <option>Garmin Venu 3</option>
+                            <option>LIGE Military Smart Watch</option>
+                            <option>Apple Watch Series 9</option>
+                        </select>
+                    </div>
+                    <div class="form">
+                        <label>Would you like to order</label>
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input">
+                            <label class="custom-control-label" for="orderSwitch"></label>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <label for="quantity">Quantity</label>
+                        <input type="range" class="form-control-range" id="quantity" min="1" max="5">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer class="bg-secondary p-3 text-center">
+            <p> &copy; CopyRight 2023, Akshit Akshit</p>
+        </footer>
+    </div>
+
+  
+</body>
+</html>
