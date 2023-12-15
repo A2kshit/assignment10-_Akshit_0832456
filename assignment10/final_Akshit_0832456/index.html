@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Weather Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-cloud-sun"></i> Weather Network
+        </a>
+        <!-- Buttons -->
+        <button class="btn btn-primary">Hourly</button>
+        <button class="btn btn-secondary">Weekly</button>
+        <button class="btn btn-success">Monthly</button>
+        <!-- Search Bar -->
+        <form class="form-inline ml-auto">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <!-- Weather Collapse Section -->
+    <div class="container mt-4">
+        <button class="btn btn-info btn-block" data-toggle="collapse" data-target="#weatherCollapse">
+          Calgary
+        </button>
+        <div class="collapse" id="weatherCollapse">
+            sunny
+        </div>
+    </div>
+
+    <!-- Weather Table Section -->
+    <div class="container mt-4">
+        <h2>Weather Forecast</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Day</th>
+                    <th scope="col">Max Temp</th>
+                    <th scope="col">Min Temp</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Weather Table Rows Go Here (at least 2 records) -->
+                <tr>
+                    <td>Monday</td>
+                    <td>75°F</td>
+                    <td>55°F</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>78°F</td>
+                    <td>58°F</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Swiper Image Carousel -->
+    <div class="container mt-4">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Swiper Slides (Images) Go Here (at least 3 images) -->
+                <div class="swiper-slide">
+                    <img src="3.jpg" alt="Sun">
+                </div>
+                <div class="swiper-slide">
+                    <img src="1.jpg" alt="Clouds">
+                </div>
+                <div class="swiper-slide">
+                    <img src="2.jpg" alt="Rain">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation Buttons -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Your Custom JavaScript Goes Here -->
+    <script src="script.js"></script>
+</body>
+</html>
